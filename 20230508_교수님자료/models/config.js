@@ -20,6 +20,7 @@ const mysql = mysql2.createPool({
     database : "test9"
 })
 
+
 // 연결 확인 메서드
 mysql.getConnection((err,res)=>{
     // 연결이 정상적으로 되지 않으면 

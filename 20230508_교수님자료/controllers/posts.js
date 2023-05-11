@@ -6,7 +6,7 @@ const { posts } = require("../models");
 exports.ViewPostAll = async function(req,res){
     try {
         const data = await posts.viewPostAll();
-        return data;
+        res.render('main', {data});
     } catch (error) {
         console.log("전체글 조회 컨트롤러에서 에러남~")
     }

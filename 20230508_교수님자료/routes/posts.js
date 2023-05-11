@@ -6,17 +6,11 @@ const express = require("express");
 // 라우터를 나눠서 관리 할수있다
 // 라우팅의 내용을 작성해놓고 app.use로 추가해서
 const router = express.Router();
+
 // 컨트롤러에 작성한 내용을 가져오자
 const {ViewPostAll, SelectPost, Insert, Update, Delete} = require("../controllers/posts");
 
-router.get('/', async (req, res) => {
-    try {
-        const data = await ViewPostAll(req,res);
-        res.render('main', {data});
-    } catch (error) {
-        console.log("게시글 리스트 화면 그리다 에러남~");
-    }
-})
+router.get('/', ViewPostAll)
 
 // 게시글 상세 페이지
 router.get('/view/:id', async (req,res)=>{

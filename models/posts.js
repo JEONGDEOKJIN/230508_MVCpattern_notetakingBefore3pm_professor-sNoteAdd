@@ -1,7 +1,7 @@
 const mysql = require("./config")
     // config 파일을 가져오면 > 그 파일에 있는 반환값인 mysql 이 들어온다. ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 
 
-console.log(mysql);
+// console.log(mysql);
 
 
 // 여기에서 posts 에 대한 기능을 작성 
@@ -117,7 +117,7 @@ console.log(mysql);
                 console.log(error)
                 console.log("게시글 삭제 하려 했는데, error");
             }
-        }
+        },
 
     }
 

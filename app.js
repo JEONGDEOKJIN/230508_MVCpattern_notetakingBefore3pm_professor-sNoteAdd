@@ -86,6 +86,7 @@
                     app.set("view engine" , "ejs")
         app.use(express.urlencoded({extended:false}))
 
+
         // 정적인 파일을 사용하기 위해 미들웨어 추가 
             app.use(express.static(path.join(__dirname, "public")));
             // 정적인 파일을 모아놓은 경로를 public 폴더로 지정 

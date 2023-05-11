@@ -2,6 +2,7 @@ const mysql = require("./config");
 // 글의 내용 작성
 // 수정 추가 삭제
 // 게시판의 기능들이 작성될 공간
+
 const posts = {
     // 테이블을 초기화 해주는 함수
     initTable : async function() {
